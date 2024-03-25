@@ -5,7 +5,7 @@ rl.on('close', () => process.exit(0));
 
 async function execute() { // put all your codes here for user inputs
 
-    function ifEven(number) {
+    function isEven(number) {
         return number % 2 ===0;
     }
 

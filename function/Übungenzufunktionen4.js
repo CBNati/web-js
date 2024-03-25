@@ -4,10 +4,16 @@ const prompt = (query) => new Promise((resolve) => rl.question(query, resolve));
 rl.on('close', () => process.exit(0));
 
 async function execute() { // put all your codes here for user inputs
+    function log (){
 
-    const print = (passedVar) => console.log(passedVar)
+        for (i=0; i<arguments.length; i++)
+        {
+            console.log(arguments[i]);
+        }
 
-    print(5)
+    }
+
+    console.log(5,2)
 
 }
 

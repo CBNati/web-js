@@ -5,7 +5,7 @@ rl.on('close', () => process.exit(0));
 
 async function execute() { // put all your codes here for user inputs
 
-    const isEvenArr = num => num % 2 === 0;
+    const isEvenArrow = num => num % 2 === 0;
 
 }
 
