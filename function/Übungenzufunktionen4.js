@@ -13,7 +13,7 @@ async function execute() { // put all your codes here for user inputs
 
     }
 
-    console.log(5,2)
+    console.log(5,2,"Java")
 
 }
 

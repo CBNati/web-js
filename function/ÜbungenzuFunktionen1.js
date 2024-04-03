@@ -9,6 +9,8 @@ async function execute() { // put all your codes here for user inputs
         return number % 2 ===0;
     }
 
+    console.log(isEven(5));
+
 }
 
 execute().catch((err) => {

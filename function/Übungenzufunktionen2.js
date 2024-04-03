@@ -7,6 +7,8 @@ async function execute() { // put all your codes here for user inputs
 
     const isEvenArrow = num => num % 2 === 0;
 
+    console.log(isEvenArrow(0))
+
 }
 
 execute().catch((err) => {

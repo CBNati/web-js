@@ -8,6 +8,8 @@ async function execute() { // put all your codes here for user inputs
         return Math.max(num1,num2,num3,num4);
     }
 
+    console.log(FindMax(7,2,3,4));
+
 }
 
 execute().catch((err) => {
