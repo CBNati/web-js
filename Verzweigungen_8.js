@@ -8,15 +8,16 @@ async function execute() { // put all your codes here for user inputs
     const num1 = parseFloat(await prompt("Please Enter Number : "));
     const num2 = parseInt(num1);
 
-    if(num1 % 2 === 0)
-        console.log("Your Number is Even");
+    if (num1 !== num2)
+        console.log("Decimal No.");
     else
-        console.log("Your Number is Odd");
+    {
+        if(num1 % 2 === 0)
+            console.log("Your Number is Even");
+        else
+            console.log("Your Number is Odd");
+    }
 
-    if (num1 === num2)
-        console.log("Not Decimal");
-    else
-        console.log("Decimal No");
 
 }
 

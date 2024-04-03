@@ -6,11 +6,14 @@ rl.on('close', () => process.exit(0));
 async function execute() { // put all your codes here for user inputs
 
 
-    const tempreature = await prompt("Please enter The Tempreature: ");
+    const tempreature = parseInt(await prompt("Please enter The Tempreature: "));
 
-    if(tempreature >= 15){
+    if(tempreature > 15){
         console.log("The tempreature is hot:");
-    } else
+    } else if(tempreature === 15){
+        console.log("The tempreature is Pleasant");
+    }
+    else
         console.log("The tempreature is cold");
 
 }
