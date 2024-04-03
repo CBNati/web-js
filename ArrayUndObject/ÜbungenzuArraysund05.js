@@ -12,15 +12,15 @@ async function execute() { // put all your codes here for user inputs
 
     }
 
-    const choiceRow = parseInt(await prompt("Please Enter Line Number : "));
-    let choiceColumn = await prompt("Please Enter Column Name : ");
+    const choiceRow = parseInt(await prompt("Please Enter Line Number (0,1,2) : "));
+    let choiceColumn = await prompt("Please Enter Column Name (first_name|last_name|age) : ");
 
     if (choiceColumn === "first_name")
         console.log(`Display: ${dataBase.first_name[choiceRow]}`)
 
     else if (choiceColumn === "last_name")
         console.log(`Display: ${dataBase.last_name[choiceRow]}`)
-    else if (choiceColumn === "alter")
+    else if (choiceColumn === "age")
         console.log(`Display: ${dataBase.alter[choiceRow]}`)
 
     else

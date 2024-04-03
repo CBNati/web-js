@@ -11,15 +11,15 @@ async function execute() { // put all your codes here for user inputs
         ["Fritz", "Mayr", 19]
     ]
 
-    const choiceRow = parseInt(await prompt("Please Enter Row Number : "));
-    let choiceColumn = await prompt("Please Enter Column Name : ");
+    const choiceRow = parseInt(await prompt("Please Enter Row Number (0,1,2) : "));
+    let choiceColumn = await prompt("Please Enter Column Name (First name | Last name | Age): ");
     let choice = 7
 
     if (choiceColumn === "First name")
         choice = 0;
     else if (choiceColumn === "Last name")
         choice = 1;
-    else if (choiceColumn === "Alter")
+    else if (choiceColumn === "Age")
         choice = 2;
     else
         console.log("Revise your Input")
