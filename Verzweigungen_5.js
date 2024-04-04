@@ -9,7 +9,7 @@ async function execute() { // put all your codes here for user inputs
 
     char = char.charAt(0).toLowerCase();
 
-    if (char.charAt(0) >= 122 &&  char.charAt(0) < 97)
+    if (char.charAt(0) >= 122 &&  char.charAt(0) < 97 || !isNaN(char))
         console.log("Please input right Character")
 
     else {
@@ -23,11 +23,11 @@ async function execute() { // put all your codes here for user inputs
             case 'o':
 
             case 'u':
-                console.log("The Char is Vowel");
+                console.log(`The Char ${char}  is Vowel`);
                 break;
 
             default:
-                console.log("The char is Consonant !");
+                console.log(`The char ${char} is Consonant !`);
                 break;
         }
     }

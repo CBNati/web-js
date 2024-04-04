@@ -5,8 +5,8 @@ rl.on('close', () => process.exit(0));
 
 async function execute() { // put all your codes here for user inputs
 
-    const num1 = parseInt(await prompt("Please Enter Number 1 : "));
-    const num2 = parseInt(await prompt("Please Enter Number 2 : "));
+    const num1 = parseFloat(await prompt("Please Enter Number 1 : "));
+    const num2 = parseFloat(await prompt("Please Enter Number 2 : "));
     const operator = await prompt("Please Enter Operator +-/* : ");
 
     switch (operator) {

@@ -5,8 +5,8 @@ rl.on('close', () => process.exit(0));
 
 async function execute() { // put all your codes here for user inputs
 
-    const passWord = 3636;
-    const passWordTry = parseInt(await prompt("Please enter The Password: "));
+    const passWord = "3636";
+    const passWordTry = await prompt("Please enter The Password: ");
 
     if(passWord === passWordTry){
         console.log("Password is Correct:",passWordTry);
