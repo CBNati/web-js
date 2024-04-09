@@ -13,21 +13,18 @@ async function execute() { // put all your codes here for user inputs
 
     const choiceRow = parseInt(await prompt("Please Enter Row Number (0,1,2) : "));
     let choiceColumn = await prompt("Please Enter Column Name (First name | Last name | Age): ");
-    let choice = 7
 
-    if (choiceColumn === "First name")
-        choice = 0;
-    else if (choiceColumn === "Last name")
-        choice = 1;
-    else if (choiceColumn === "Age")
-        choice = 2;
-    else
-        console.log("Revise your Input")
+    const changer = {
+        "First name": 0,
+        "Last name": 1,
+        "age":2
+    }
 
-    if (choice === 0 || choice === 1 || choice === 2)
-        console.log(`Display: ${dataBase[choiceRow][choice]}`)
+    let choice = changer[choiceColumn];
+    console.log(`Display: ${dataBase[choiceRow][choice]}`)
 
 }
+
 execute().catch((err) => {
     console.error(err);
 }).finally(() => rl.close());
